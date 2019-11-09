@@ -5,11 +5,93 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Langing page</title>
+    <link rel="stylesheet" href="css/effects.css">
+    <!-- <link rel="stylesheet" href="css/transform.css"> -->
     <link href="css/reset.css" rel="stylesheet">
     <link href="css/grid.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
     <link href="css/landing.css" rel="stylesheet">
 </head>
+<style>
+        .navbar label {
+            display: none;
+            font-size: 30px;
+            position: fixed;
+            padding: 2px 10px 5px 5px;
+            top: 8px;
+            left: 0;
+            cursor: pointer;
+            z-index: 50;
+        }
+            
+        .navbar input[type="checkbox"] + label {
+            color: #fff;
+        } 
+            
+        .navbar input[type="checkbox"]:checked + label {
+            color: #fed136;
+            font-style: normal;
+        } 
+            
+        .navbar input[type="checkbox"] {
+            display: none;
+        }
+
+
+        @media screen and (max-width: 850px) {
+            .navbar {
+                display: block;
+                background: purple;
+                height: auto; 
+            }
+            
+            .navbar label {
+              display: block;
+            }
+           
+            .navbar .navbar-navigation {
+                background: purple;
+                float: left;
+                position: fixed;
+                top: 45px;
+                left: -250px;
+                width: 230px;
+            }
+
+            .nav-item {
+                margin-left: 10px;
+            }
+
+            .nav-item, .form-inline {
+                display: block;
+            }
+
+            .navbar .form-control{
+                width: 210px;
+            }
+
+            .btn-search {
+                display: none;
+            }
+
+            .navbar-brand {
+                margin-left: 30px;
+            }
+
+            .navbar input[type="checkbox"]:checked ~.navbar-navigation  {
+                left: 0;
+            }
+
+            .site-info, .bottom-social-icons {
+                display: block;
+                float: none;
+                width: 100%;
+                text-align: center;
+            }
+        }
+        
+        
+    </style>
 <body>
     <nav class="navbar">
         <div class="navbar-brand float-left" href="#">Shopik"Ashotik"</div>
@@ -108,8 +190,8 @@
                             <h3>Starter</h3>
                         </div>
                         <div class="plan-price">
-                            <div class="price-value"><span>$</span> 39 <span>.25</span></div>
-                            <div class="interval">Smart <br> Cat</div>
+                            <div class="price-value"><span>$</span> 35 <span></span></div>
+                            <div class="interval">Standart <br> </div>
                         </div>
                         <div class="plan-list">
                             <ul>
@@ -130,8 +212,8 @@
                             <h3>Premium</h3>
                         </div>
                         <div class="plan-price">
-                            <div class="price-value"><span>$</span> 69 <span>.99</span></div>
-                            <div class="interval">High <br> Dog</div>
+                            <div class="price-value"><span>$</span> 70 </div>
+                            <div class="interval">Comfort <br> </div>
                         </div>
                         <div class="plan-list">
                             <ul>
@@ -152,8 +234,8 @@
                             <h3>Unltimate</h3>
                         </div>
                         <div class="plan-price">
-                            <div class="price-value"><span>$</span> 89 <span>.99</span></div>
-                            <div class="interval">Business <br> Pet</div>
+                            <div class="price-value"><span>$</span> 100 <span></span></div>
+                            <div class="interval">Business <br> </div>
                         </div>
                         <div class="plan-list">
                             <ul>

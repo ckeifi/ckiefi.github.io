@@ -21,6 +21,7 @@ article, aside, dialog, figcaption, figure, footer, header, hgroup, main, nav, s
     display: block;
 }
 img {
+    font-size: 25px;
     display: block;
 }
 
@@ -64,8 +65,8 @@ img {
 
 /* buttons */
  .btn {
-    font-size: 14px;
-    font-weight: 400;
+    font-size: 9px;
+    font-weight: 250;
     color: #fff;
     display: inline-block;
 }
@@ -107,8 +108,8 @@ img {
 
 /* card */
  .card {
-    width: 300px;
-    height: 250px;
+    width: 250px;
+    height: 350px;
 } 
 
 /* footer */
@@ -219,7 +220,7 @@ img {
     margin-bottom: 2rem;
 }
 .bottom-social-icons a {
-    margin-left: 5px;
+    margin-left: 15px;
 } 
 
 /* Border-граница */
@@ -366,3 +367,102 @@ img {
     background-color: #007bb5;
     border-color: #007bb5;
 } 
+.blog {
+    margin: 3.1em auto 0.1em;
+}
+
+.blog-post {
+    padding-bottom: 0.8em;
+    margin-bottom: 1.8em;
+}
+
+.blog-post-body {
+    margin: 0 10px;
+}
+
+.blog-post header { 
+    height: auto; 
+}
+        
+.blog-post p {
+    margin: 0.5em;
+}
+
+.blog-post .float-right  {
+    float: right;    
+    margin: 0 0 0 15px;
+    width: 300px;
+}
+
+.blog-post .float-left {
+    float: left;    
+    margin: 0 15px 0 0;
+    width: 300px;
+}
+
+.sidebar-title {
+    background-color: #07cef1f1;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 0.8px;
+    font-size: 14px;
+    padding: 15px 0;
+    margin: -50px 0 25px;
+}
+
+.sidebar-widget {
+    margin-bottom: 40px;
+    width: 100%;
+}
+
+.widget-break-news h4 {
+    text-align: center;
+    margin: 20px 0 5px;
+}
+
+.widget-break-news p {
+    margin-top: 10px;
+    font-size: 17px;
+    line-height: 24px;
+    color: #000000;
+}
+
+@media screen and (max-width: 850px) {
+aside{
+    margin-top: 1em;
+}
+.row > * {
+    padding: 10px 0 0 10px;
+}
+
+.row {
+    margin: -10px 0 -1px -10px;
+}
+
+.col, [class*="col-"] {
+    padding: 0 15px;
+    max-width: 100%;
+    width: 100%;
+}
+
+.sidebar-widget{
+    padding: 0 15px;
+    overflow: hidden;
+}
+
+.sidebar-widget p {
+    width: 90%;
+}
+
+.sidebar-widget p, .sidebar-widget img {
+    padding: 0 10px;
+}
+
+.card{
+    width: 100%;
+    padding: 0 15px;
+    overflow: hidden;
+}
+}

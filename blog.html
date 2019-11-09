@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="reset/reset.css">
+    <link href="css/grid.css" rel="stylesheet">
+    <link rel="icon" href="./favicon.ico"> 
+    <link rel="stylesheet" href="css/effects.css">
+    <!-- <link rel="stylesheet" href="css/transform.css"> -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <title>Shopik</title>
+    <style>
+        .navbar label {
+            display: none;
+            font-size: 30px;
+            position: fixed;
+            padding: 2px 10px 5px 5px;
+            top: 8px;
+            left: 0;
+            cursor: pointer;
+            z-index: 50;
+        }
+            
+        .navbar input[type="checkbox"] + label {
+            color: #fff;
+        } 
+            
+        .navbar input[type="checkbox"]:checked + label {
+            color: #fed136;
+            font-style: normal;
+        } 
+            
+        .navbar input[type="checkbox"] {
+            display: none;
+        }
+
+
+        @media screen and (max-width: 850px) {
+            .navbar {
+                display: block;
+                background: purple;
+                height: auto; 
+            }
+            
+            .navbar label {
+              display: block;
+            }
+           
+            .navbar .navbar-navigation {
+                background: purple;
+                float: left;
+                position: fixed;
+                top: 45px;
+                left: -250px;
+                width: 230px;
+            }
+
+            .nav-item {
+                margin-left: 10px;
+            }
+
+            .nav-item, .form-inline {
+                display: block;
+            }
+
+            .navbar .form-control{
+                width: 210px;
+            }
+
+            .btn-search {
+                display: none;
+            }
+
+            .navbar-brand {
+                margin-left: 30px;
+            }
+
+            .navbar input[type="checkbox"]:checked ~.navbar-navigation  {
+                left: 0;
+            }
+
+            .site-info, .bottom-social-icons {
+                display: block;
+                float: none;
+                width: 100%;
+                text-align: center;
+            }
+        }
+        
+        
+    </style>
+</head>
+<body>
+        <nav class="navbar">
+                <input type="checkbox" id="menu-trigger" /> 
+                <label class='label' for="menu-trigger">
+                    <i class="fas fa-bars" aria-hidden="true"></i>
+                </label>
+                <div class="navbar-brand float-left" href="#">Shopik"Ashotik" </div>
+            
+                  <div class="navbar-navigation float-right">
+                    <ul class="navbar-nav">
+                      <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="landing.html">About</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="blog.html">BLog</a>
+                      </li>
+                    </ul>
+                    <form class="form-inline">
+                      <input
+                        class="form-control"
+                        type="text"
+                        placeholder="Search"
+                        aria-label="Search"
+                      />
+                      <a class="btn-search" type="submit">Search</a>
+                    </form>
+                  </div>
+              </nav>
+              <header>
+                <section class="jumbotron">
+                  <div class="container">
+                      <h1 class="jumbotron-heading">Shopik's staff</h1>
+                      <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit.<br> Ipsa molestiae consectetur, sed modi consequuntur enim.<br> Totam, in a praesentium quas asperiores fugiat nostrum non ex eum! Ad iure incidunt repellendus?</p>
+                      <p>
+                          <a href="#" class="btn">Main call to action</a>
+                          <a href="#" class="btn">Secondary action</a>
+                      </p>
+                  </div>
+              </section>
+              </header>
+              
+    <div class="blog container">
+            <div class="row">
+                <main class="col-9">
+                    <!-- blog-post -->
+                    <article class="blog-post">
+    
+                        <div class="blog-post-body">
+                            <header>
+                                <h2 class="blog-post-title">The Best Dog Style Looks of Kyiv Fashion Week</h2>
+                                <div class="blog-post-meta">
+                                    <span>by <a href="#">Arslkv</a></span> / <span> <i class="fas fa-clock"></i> <time datetime="2019-01-25T12:00">January 25, 2019 </time></span> / <span><i class="fas fa-comment"></i> <a href="#">343</a></span>
+                                </div>
+                            </header>
+                            <div class="blog-post-image">
+                                <img src="images/02.jpg" alt="" class='float-right'>
+                                <p>
+                                    Etiam porta <em>sem malesuada magna</em> mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur. Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa.
+                                </p>
+                            </div>
+                            <p>
+                                Few months ago, we found ridiculously cheap plane tickets for Boston and off we went. It was our first visit to the city and, believe it or not, Stockholm in February was more pleasant than Boston in March. It probably has a lot to do with the fact that we arrived completely unprepared.
+                            </p>
+                            <div class="read-more"><a href="#">Continue Reading</a></div>
+                        </div>
+                    </article>
+    
+                    <article class="blog-post">
+    
+                        <div class="blog-post-body">
+                            <header class='blog-header'>
+                                <h2 class="blog-post-title">The Best Cat Style Looks of Kyiv Fashion Week</h2>
+                                <div class="blog-post-meta">
+                                    <span>by <a href="#">Janus</a></span> / <span><i class="fas fa-clock"></i><time
+                                            datetime="2019-01-25T12:00">January
+                                            25, 2019 </time></span> / <span><i class="fas fa-comment"></i> <a
+                                            href="#">343</a></span>
+                                </div>
+                            </header>
+                            <div class="blog-post-image">
+    
+                                <img src="images/01.jpg" alt="" class='float-left'>
+                                <p>
+                                    Etiam porta <em>sem malesuada magna</em> mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur. Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa.
+                                </p>
+                            </div>
+                            <p>
+                                Few months ago, we found ridiculously cheap plane tickets for Boston and off we went. It was our first visit to the city and, believe it or not, Stockholm in February was more pleasant than Boston in March. It probably has a lot to do with the fact that we arrived completely unprepared. That I, in my converse and thin jacket, did not end up with pneumonia is honestly not even fair.
+                            </p>
+                            <div class="read-more"><a href="#">Continue Reading</a></div>
+                        </div>
+                    </article>
+                </main>
+    
+                <aside class="col-3">
+                    <h3 class="sidebar-title">Top News</h3>
+                    <!-- sidebar-widget -->
+                    <div class="sidebar-widget">
+                                
+                        <div class="widget-break-news">
+                            <a href=""><img src="images/01.jpg" alt=""></a>
+                            <h4>Major Fashion</h4>
+                            <p>While everyone’s eyes are glued to the runway, it’s hard to ignore that there are major fashion moments on the front row too.</p>
+                        </div>
+    
+                        <div class="widget-break-news">
+                            <a href=""><img src="images/02.jpg" alt=""></a>
+                            <h4>Major Fashion</h4>
+                            <p>While everyone’s eyes are glued to the runway, it’s hard to ignore that there are major fashion moments on the front row too.</p>
+                        </div>
+        
+                    </div>
+                </aside>
+            </div>
+        </div>
+              <footer class="">
+                  <div class="copyright">
+                      <div class="container">
+                          <div class="row">
+                              <div class="col">
+                                  <div class="site-info float-left">
+                                      2020 &copy; Ashotik Shopik by <a rel="nofollow" href="#">Arslkv</a>
+                                  </div>
+                                  <div class="bottom-social-icons social-icon float-right">
+                                      <a class="twitter" href="#"><i class="fab fa-twitter"></i></a>
+                                      <a class="facebook" href="#"><i class="fab fa-facebook"></i></a>
+                                      <a class="google-plus" href="#"><i class="fab fa-google-plus"></i></a>
+                                      <a class="linkedin" href="#"><i class="fab fa-linkedin"></i></a>
+                                      <a class="dribble" href="#"><i class="fab fa-dribbble"></i></a>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </footer>
+</body>
+</html>
