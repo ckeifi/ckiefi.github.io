@@ -5,6 +5,7 @@
     <link rel="stylesheet" href="reset/reset.css">
     <link href="css/grid.css" rel="stylesheet">
     <link rel="icon" href="./favicon.ico"> 
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/effects.css">
     <link rel="stylesheet" href="css/transform.css">
     <meta charset="UTF-8">
@@ -80,6 +81,308 @@
                 text-align: center;
             }
         }
+        #main header  {
+            margin:  auto;
+            text-align: center;
+        }
+        .content-slider {
+            width: 100%;
+            margin: 0 auto;
+            height: 450px;
+            
+        }
+
+        .slider {
+            height: 400px;
+            width: 90%;
+            margin: 45px auto;
+            overflow: visible;
+            position: relative;
+            
+        }
+
+        .slider img {
+
+            border-radius: 10px;
+        }
+
+        .slider ul {
+            margin: 0;
+            padding: 0;
+            position: relative;
+        }
+
+        .slider li {
+            width: 90%;
+            height: 400px;
+            list-style: none;
+            width: 90%;
+            position: absolute;
+            top: -420px;
+            
+        }
+
+        .slider .quote {
+            font-size: 17px;
+            padding-top: 2rem;
+            
+        }
+
+        .slider .source {
+            font-size: 20px;
+            text-align: right;
+        }
+
+        .mask {
+            overflow: hidden;
+            height: 450px;
+        }
+
+        .slider li.anim1 {
+            animation: cycle1 15s linear infinite;
+        }
+
+        .slider li.anim2 {
+            animation: cycle2 15s linear infinite;
+        }
+
+        .slider li.anim3 {
+            animation: cycle3 15s linear infinite;
+        }
+
+        .slider li.anim4 {
+            animation: cycle4 15s linear infinite;
+        }
+
+        .slider li.anim5 {
+            animation: cycle5 15s linear infinite;
+        }
+
+        .slider:hover li {
+            animation-play-state: paused;
+        }
+
+        @keyframes cycle1 {
+            0% {
+                top: 0px;
+            }
+
+            4% {
+                top: 0px;
+            }
+
+            16% {
+                top: 0px;
+                opacity: 1;
+                z-index: 0;
+            }
+
+            20% {
+                top: 325px;
+                opacity: 0;
+                z-index: 0;
+            }
+
+            21% {
+                top: -325px;
+                opacity: 0;
+                z-index: -1;
+            }
+
+            50% {
+                top: -325px;
+                opacity: 0;
+                z-index: -1;
+            }
+
+            92% {
+                top: -325px;
+                opacity: 0;
+                z-index: 0;
+            }
+
+            96% {
+                top: -325px;
+                opacity: 0;
+            }
+
+            100% {
+                top: 0px;
+                opacity: 1;
+            }
+        }
+
+        @keyframes cycle2 {
+            0% {
+                top: -325px;
+                opacity: 0;
+            }
+
+            16% {
+                top: -325px;
+                opacity: 0;
+            }
+
+            20% {
+                top: 0px;
+                opacity: 1;
+            }
+
+            24% {
+                top: 0px;
+                opacity: 1;
+            }
+
+            36% {
+                top: 0px;
+                opacity: 1;
+                z-index: 0;
+            }
+
+            40% {
+                top: 325px;
+                opacity: 0;
+                z-index: 0;
+            }
+
+            41% {
+                top: -325px;
+                opacity: 0;
+                z-index: -1;
+            }
+
+            100% {
+                top: -325px;
+                opacity: 0;
+                z-index: -1;
+            }
+        }
+
+        @keyframes cycle3 {
+            0% {
+                top: -325px;
+                opacity: 0;
+            }
+
+            36% {
+                top: -325px;
+                opacity: 0;
+            }
+
+            40% {
+                top: 0px;
+                opacity: 1;
+            }
+
+            44% {
+                top: 0px;
+                opacity: 1;
+            }
+
+            56% {
+                top: 0px;
+                opacity: 1;
+            }
+
+            60% {
+                top: 325px;
+                opacity: 0;
+                z-index: 0;
+            }
+
+            61% {
+                top: -325px;
+                opacity: 0;
+                z-index: -1;
+            }
+
+            100% {
+                top: -325px;
+                opacity: 0;
+                z-index: -1;
+            }
+        }
+
+        @keyframes cycle4 {
+            0% {
+                : -325px;
+                opacity: 0;
+            }
+
+            56% {
+                top: -325px;
+                opacity: 0;
+            }
+
+            60% {
+                top: 0px;
+                opacity: 1;
+            }
+
+            64% {
+                top: 0px;
+                opacity: 1;
+            }
+
+            76% {
+                top: 0px;
+                opacity: 1;
+                z-index: 0;
+            }
+
+            80% {
+                top: 325px;
+                opacity: 0;
+                z-index: 0;
+            }
+
+            81% {
+                top: -325px;
+                opacity: 0;
+                z-index: -1;
+            }
+
+            100% {
+                top: -325px;
+                opacity: 0;
+                z-index: -1;
+            }
+        }
+
+        @keyframes cycle5 {
+            0% {
+                top: -325px;
+                opacity: 0;
+            }
+
+            76% {
+                top: -325px;
+                opacity: 0;
+            }
+
+            80% {
+                top: 0px;
+                opacity: 1;
+            }
+
+            84% {
+                top: 0px;
+                opacity: 1;
+            }
+
+            96% {
+                top: 0px;
+                opacity: 1;
+                z-index: 0;
+            }
+
+            100% {
+                top: 325px;
+                opacity: 0;
+                z-index: 0;
+            }
+        }
+
         
         
     </style>
@@ -90,7 +393,7 @@
                 <label class='label' for="menu-trigger">
                     <i class="fas fa-bars" aria-hidden="true"></i>
                 </label>
-                <div class="navbar-brand float-left" href="#">Shopik"Ashotik"</div>
+                <div class="navbar-brand float-left" href="#">YachtStores </div>
             
                   <div class="navbar-navigation float-right">
                     <ul class="navbar-nav">
@@ -115,11 +418,88 @@
                     </form>
                   </div>
               </nav>
+              <!-- Main -->
+    <article id="main">
+        <section class="wrapper style3 container special">
+            <div class="content-slider">
+                <div class="slider">
+                    <div class="mask">
+                        <ul>
+                            <li class="anim1">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <img src="img/finn1.jpg">
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="quote">The Finn class yacht is a single sport sailing dinghy with armament of the Kat type (one mast, one sail). The Finn class was developed in <b>1949</b> for singles at the <b>1952</b> Olympics. In its history, Finn has already survived 16 Olympic selections and is still included in the program of the Olympic Games and today remains the only discipline in the men's category in heavyweight.
+                                             </div>
+                                    </div>
+                                </div>
+
+                            </li>
+                            <li class="anim2">
+                                <div class="row">
+
+                                    <div class="col-6">
+                                        <div class="quote">At the 2012 ISAF annual meeting, historical injustice was corrected when in 2008 the Tornado catamaran (the film about the medal race of which received the gold award as the most tele-watching following the Olympic Games in China) was excluded from the Olympic Games in the 2016 and 2020 Games another Nakra 17 catamaran is included.
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <img src="img/nacra17.jpg">
+                                    </div>
+                                </div>
+
+                            </li>
+                            <li class="anim3">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <img src="img/laser2.jpg">
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="quote">
+                                            “Laser” is a very light, cheap and at the same time dynamic boat. In 1969, Canadian Bruce Kerby thought about creating a small sailing dinghy that could be easily transported on the roof of a car. He coped with the task, and the “Laser” appeared.
+                                             </div>
+                                    </div>
+                                </div>
+
+                            </li>
+                            <li class="anim4">
+                                <div class="row">
+
+                                    <div class="col-6">
+                                        <div class="quote">
+                                            "Seventy ”- a light planing dinghy dinghy with a trapeze, designed in the distant 1963. Posted by Andre Kornu. Then plastic was a completely new material in sports shipbuilding, and, in fact, “470 ″ is one of the first classes that was originally designed as a plastic boat. 
+                                             </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <img src="img/470.jpg">
+                                    </div>
+                                </div>
+
+                            </li>
+                            <li class="anim5">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <img src="img/49.jpg">
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="quote">The Foti Niner or the Forty-Ninth is a famous sailing rocket. “49er” is the most advanced race car in the Olympic program. Two people in a carriage, both hinge on the trapezoid, while also using special retractable wings in order to make the center of gravity further overboard. Huge compared to the hull of the sail. Boats of such a fantastic design are called “Scythian”.
+                                             </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </article>
               <header>
                 <section class="jumbotron">
                   <div class="container">
-                      <h1 class="jumbotron-heading">Shopik's staff</h1>
-                      <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit.<br> Ipsa molestiae consectetur, sed modi consequuntur enim.<br> Totam, in a praesentium quas asperiores fugiat nostrum non ex eum! Ad iure incidunt repellendus?</p>
+                      <h1 class="jumbotron-heading">Yachting"Stories"</h1>
+                      <p class="lead">
+                        Here we will tell one or another "Yacht Stories". Which happened to us, as well as to other people. Nevertheless, we can provide you with a try to sail on a sailing yacht if you wish</p>
                       <p>
                           <a href="#" class="btn">Main call to action</a>
                           <a href="#" class="btn">Secondary action</a>
@@ -176,7 +556,7 @@
                                 <img src="img/yacht.jpg" alt="" class='float-left'>
                                 <p>
                                     In addition to Sailing itself, there is an even broader concept - Yachting, which can be described as sailing tourism, since in most cases it no longer carries directly a competitive component, but rather refers to leisure.<br>
-                                    Yachting involves a wide range of actions: choosing a ship (owning or renting it), determining the yacht direction and the itinerary, leisure activities associated with the yacht (swimming in the sea, diving, water skiing, fishing, etc.), but desirable optional command of a ship. For tourism purposes, you can engage in yachting as a crew member or lessee of the vessel.
+                                    Yachting involves a wide range of actions: choosing a ship (owning or renting it), determining the yacht direction and the itinerary, leisure activities associated with the yacht <b>(swimming in the sea, diving, water skiing, fishing, etc.)</b>, but desirable optional command of a ship. For tourism purposes, you can engage in yachting as a crew member or lessee of the vessel.
 
                                 </p>
                             </div>
@@ -184,7 +564,7 @@
                                 There is a large list of yacht destinations, each of which is characterized by its own nuances, for example, climatic features, attractions, itineraries, number of marinas, etc.<br>
                                 Yachting is possible on all types of yachts: <b>sailing, motor, gulets, sail-motor catamarans</b>.
                             </p>
-                            <div class="read-more"><a href="https://ru.wikipedia.org/w/index.php?title=%D0%9F%D0%B0%D1%80%D1%83%D1%81%D0%BD%D1%8B%D0%B9_%D1%81%D0%BF%D0%BE%D1%80%D1%82&action=edit&section=7">Continue Reading</a></div>
+                            <div class="read-more"><a href="">Continue Reading</a></div>
                         </div>
                     </article>
                 </main>

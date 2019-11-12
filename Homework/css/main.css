@@ -1,6 +1,7 @@
 /* Webfonts and Icon fonts */
 @import url("../fontawesome/css/all.min.css");
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,800i&display=swap&subset=cyrillic-ext");
+@import url('https://fonts.googleapis.com/css?family=Markazi+Text&display=swap');
 html {
     font-family: 'Open Sans', sans-serif;
 } 
@@ -53,7 +54,7 @@ img {
 }
 .form-inline .form-control {
     display: inline-block;
-    font-size: 1em;
+    font-size: 15px;
 }
 .navbar {
     line-height: 1.6em;
@@ -80,6 +81,7 @@ img {
     background-color: transparent;
 }
 .btn-search {
+    font-size: 15px;
     color: #fff;
     background-color: #008080;
 } 
@@ -379,6 +381,8 @@ img {
 }
 
 .blog-post-body {
+    font-family: 'Markazi Text', serif;
+    font-size: 17px;
     margin: 0 10px;
 }
 
