@@ -1,6 +1,6 @@
+/* Webfonts and Icon fonts */
 @import url("../fontawesome/css/all.min.css");
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,800i&display=swap&subset=cyrillic-ext"); 
-
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,800i&display=swap&subset=cyrillic-ext");
 html {
     font-family: 'Open Sans', sans-serif;
 } 
@@ -13,22 +13,23 @@ a {
 /* Дисплей */
 article, aside, dialog, figcaption, figure, footer, header, hgroup, main, nav, section {
     display: block;
-    color: #666;
+    color: rgb(102, 102, 102);
 }
 
 /* Картинки */
 .card-img-top {
     display: block;
+
 }
 img {
-    font-size: 25px;
+    font-size: 8px;
     display: block;
 }
 
 /* navbar */
 .navbar {
     display: block;
-    background-color: purple;
+    background-color: #008080;
 }
 
  .navbar-navigation {
@@ -56,7 +57,7 @@ img {
 }
 .navbar {
     line-height: 1.6em;
-} */
+} 
 
 /* card */
 .card {
@@ -72,7 +73,7 @@ img {
     display: inline-block;
 }
 .btn-common {
-    background-color: purple;
+    background-color: #008080;
 }
 .btn-border {
     color: #fff;
@@ -80,7 +81,7 @@ img {
 }
 .btn-search {
     color: #fff;
-    background-color: purple;
+    background-color: #008080;
 } 
 
 /* footer */
@@ -174,7 +175,7 @@ img {
     background-color: #e9ecef;
 }
 .copyright {
-    background-color: purple;
+    background-color: #008080;
     padding: 3em 10px;
     color: #fff;
 } 

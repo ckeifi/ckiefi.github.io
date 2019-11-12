@@ -97,9 +97,9 @@
   /* аналог - свойство skew */
   /* transform: skew(-30deg);*/
 
- .card:hover img {
+ /* .card:hover img {
   background: pink;
-  transform: matrix(1, 0, -0.5, 1, 0, 0);
+  transform: matrix(1, 0, -0.5, 1, 0, 0); */
 } 
 
 /* Поворот определяется в виде косинусов и синусов в первых 4-х коэффициентах. Например, поворот против часовой стрелки на 45 градусов будет выражен следующим кодом: */
@@ -120,7 +120,7 @@
     opacity: 1;
     transform: matrix(.8,1,1.5,0.2,80,1);
     transition: transform 0.4s, opacity 0.1s;
-} */
+} 
 
 
  .card:hover img  {
@@ -160,17 +160,17 @@
 } 
 
  .card:nth-of-type(1) {
-  background: rgb(6, 182, 21);
+  background-color: hidden;
   transition-timing-function: linear;
 } 
 
 
  p:nth-of-type(1) {
-    background: #F06E58;
+    background-color: hidden;
     transition-timing-function: linear;
 } 
 * p:nth-of-type(2) {
-    background: rgb(93, 254, 246);
+    background: rgb(151, 115, 36);
     transition-timing-function: ease;
 } 
 
@@ -190,7 +190,7 @@
 } 
 
  p:nth-of-type(6) {
-    background: #82DDFF;
+    background: rgb(46, 176, 223);
     transition-timing-function: cubic-bezier(0.6, 0.1, 0.15, 0.8);
 } 
 
